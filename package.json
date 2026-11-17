@@ -1,0 +1,14 @@
+{
+  "name": "garage-log",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -n server,web -c blue,magenta \"npm:dev -w @garage/server\" \"npm:dev -w @garage/web\""
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.7"
+  }
+}
