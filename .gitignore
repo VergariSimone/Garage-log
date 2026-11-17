@@ -3,3 +3,4 @@ dist
 .env
 apps/server/data/
 apps/server/backups/
+scratch/
